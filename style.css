@@ -1,0 +1,458 @@
+* {
+  box-sizing: border box;
+}
+
+body {
+  margin: 0;
+  font-family: Trebuchet MS;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  height: 0.05px;
+  width: 100%;
+  padding: 0;
+}
+
+.main {
+  margin: 0;
+}
+
+.nav-container {
+  margin: 0;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+
+}
+
+.logo a{
+  color: white;
+  font-family: 'sans-serif' ;
+  font-size: max(1.5rem, 2vw);
+  font-weight: bold;
+}
+
+.logo i{
+  color: white;
+  font-size: max(1.5rem, 2vw);
+}
+
+.top-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: clamp(200px, 35%, 500px);
+}
+
+.top-links li a{
+  color: white;
+}
+
+.top-links li a:hover {
+  color: gold;
+}
+
+.summary {
+  height: 500px;
+  width: 100%;
+  background: url("images/workout.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: flex-start;
+
+}
+
+.summary-head {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 100vw;
+  margin: 0 auto;
+  justify-content: center;
+  
+}
+
+.summary-head h2{
+  margin: 0 auto;
+  width: 60vw;
+  text-align: center;
+  padding: 10px;
+}
+
+.summary-head p {
+  margin: 0 auto;
+  width: 60vw;
+  text-align: center;
+}
+
+.summary-title {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 40vw;
+}
+
+.get-started-container {
+  padding: 10px;
+}
+
+.get-started {
+  color: white;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 90px;
+  background-color: black;
+}
+
+.get-started a {
+  color: white;
+}
+
+.get-started a:hover {
+  color: gold;
+}
+/*########################################################*/
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.weights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.weights-icon {
+   font-size: max(1.5rem, 2vw);
+}
+
+.weights-title {
+  font-weight: bold;
+}
+
+.weights-summary {
+  display: flex;
+  text-align: center;
+  width: 25vw;
+}
+
+.cardio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.cardio-icon {
+   font-size: max(1.5rem, 2vw)
+}
+
+.cardio-title {
+  font-weight: bold;
+}
+
+.cardio-summary {
+  display: flex;
+  text-align: center;
+  width: 25vw;
+
+}
+
+.diet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.diet-icon {
+   font-size: max(1.5rem, 2vw)
+}
+
+.diet-title {
+  font-weight: bold;
+}
+
+.diet-summary {
+  display: flex;
+  text-align: center;
+  width: 25vw;
+}
+
+.learn-more-container {
+  padding-bottom: 60px;
+}
+
+.learn-more {
+  color: white;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 90px;
+  background-color: black;
+}
+
+.learn-more a {
+  color: white;
+}
+
+.learn-more a:hover {
+  color: gold;
+}
+/*########################################################*/
+.reviews {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.track-runner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.track-image {
+  margin: 15px;
+  width: 170px;
+  height: 150px;
+}
+
+.track-runner-quote {
+  width: 50vw;
+}
+
+
+.body-builder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.body-builder-image {
+  width: 160px;
+  height: 140px;
+  background: url("images/track.png");
+}
+
+.body-builder-quote {
+  width: 50vw;
+}
+
+.happy-man {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.happy-man-image {
+  margin: 15px;
+  width: 160px;
+  height: 140px;
+  background-color: white;
+  background-blend-mode: multiply;
+}
+
+.happy-man-quote {
+  width: 50vw;
+}
+
+.quoters {
+  font-style: italic;
+}
+
+/*######################################################*/
+
+.buying {
+  background-image: radial-gradient( rgb(255, 254, 168) ,rgb(252, 229, 103));
+  color: black;
+  height: 500px;
+  width: 100%;
+}
+
+.buying-options {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.buying-options div {
+  display: flex;
+  padding: 6px;
+}
+
+
+.standard {
+  display: flex;
+  flex-direction: column;
+  border: solid 4px white;
+  justify-content: top;
+  height: 270px;
+  border-radius: 50px;
+  color: white;
+  background: black;
+}
+
+.buy-standard a{
+  color: black;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80px;
+  background-color: rgb(252, 229, 103);
+  border: solid 2px rgb(252, 229, 103);
+}
+
+.buy-standard a:hover {
+  background-color:white;
+  border: solid 2px rgb(252, 229, 103);
+}
+
+.standard ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+
+.pro {
+  display: flex;
+  flex-direction: column;
+  border: solid 4px white;
+  justify-content: top;
+  height: 325px;
+  border-radius: 50px;
+  color: white;
+  background: black;
+  }
+
+.buy-pro a {
+  color: black;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80px;
+  background-color: rgb(252, 229, 103);
+  border: solid 2px rgb(252, 229, 103);
+}
+
+.buy-pro a:hover {
+  background-color:white;
+  border: solid 2px rgb(252, 229, 103);
+}
+
+.pro ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.elite {
+  display: flex;
+  flex-direction: column;
+  border: solid 4px white;
+  justify-content: top;
+  height: 385px;
+  border-radius: 50px;
+  color: white;
+  background: black;
+}
+
+.buy-elite a{
+  color: black;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80px;
+  background-color: rgb(252, 229, 103);
+  border: solid 2px rgb(252, 229, 103);
+}
+
+.buy-elite a:hover {
+  background-color:white;
+  border: solid 2px rgb(252, 229, 103);
+}
+
+.elite ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/*######################################################*/
+
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 300px;
+}
+
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 50%;
+  height: 60% auto;
+  justify-content: center;
+  margin: 40px auto;
+  border-radius: 25px;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+}
+
+.sources {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+  font-size: max(2rem, 3vw);
+  padding: 20px;
+}
